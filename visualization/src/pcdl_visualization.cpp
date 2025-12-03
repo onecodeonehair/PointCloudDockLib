@@ -5,6 +5,7 @@
 #include "pcdl_visualization.h"
 #include <spdlog/spdlog.h>
 #define  DLL_EXPORTS
+
 namespace pcdl {
     namespace visualization {
         template<typename PointT>
@@ -52,8 +53,8 @@ namespace pcdl {
         }
 
         // 显式实例化 pcl::PointXYZI 类型的模板函数
-        template
-         bool showPointCloud<pcl::PointXYZI>(
+        template PCDL_VISUALIZATION_API
+        bool showPointCloud<pcl::PointXYZI>(
             const pcl::PointCloud<pcl::PointXYZI>::ConstPtr &,
             const pcl::PointCloud<pcl::PointXYZI>::ConstPtr &,
             const std::string &);

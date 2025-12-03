@@ -16,7 +16,11 @@ target_link_libraries(${LIB_NAME} PRIVATE
     ${OpenCV_LIBS}
 )
 
-
+# 为target 设置 宏
+# 设置导出
+if(WIN32)
+    target_compile_definitions(pcdl_visualization PRIVATE PCDL_VISUALIZATION_EXPORTS)
+endif()
 
 
 
