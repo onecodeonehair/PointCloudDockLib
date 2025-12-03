@@ -12,8 +12,6 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 find_package(spdlog CONFIG REQUIRED)
 
 ##----------# add subdirectories #----------##
-add_subdirectory(visualization)
-add_subdirectory(io)
 add_subdirectory(demo)
 
 

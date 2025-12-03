@@ -1,8 +1,8 @@
 //
 // Created by mfy on 2025/12/2.
 //
-#include "pcdl/visualization/pcdl_visualization.h"
-#include "pcdl/io/pcdl_io_txt.h"
+#include "pcdl/visualization/pcdl_visualization.hpp"
+#include "pcdl/io/pcdl_io_txt.hpp"
 #include "spdlog/spdlog.h"
 
 int main() {

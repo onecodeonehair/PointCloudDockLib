@@ -2,12 +2,15 @@
 // Created by mfy on 2025/12/2.
 //
 
-#include "pcdl_visualization.h"
+#ifndef POINTCLOUDDOCKLIB_PCDL_VISUALIZATION_H
+#define POINTCLOUDDOCKLIB_PCDL_VISUALIZATION_H
+#include <pcl/visualization/pcl_visualizer.h>
 #include <spdlog/spdlog.h>
-#define  DLL_EXPORTS
 
-namespace pcdl {
-    namespace visualization {
+namespace pcdl
+{
+    namespace visualization
+    {
         template<typename PointT>
         bool showPointCloud(const typename pcl::PointCloud<PointT>::ConstPtr &cloud,
                             const typename pcl::PointCloud<PointT>::ConstPtr &target_cloud,
@@ -51,12 +54,9 @@ namespace pcdl {
 
             return true;
         }
-
-        // 显式实例化 pcl::PointXYZI 类型的模板函数
-        template
-        bool showPointCloud<pcl::PointXYZI>(
-            const pcl::PointCloud<pcl::PointXYZI>::ConstPtr &,
-            const pcl::PointCloud<pcl::PointXYZI>::ConstPtr &,
-            const std::string &);
     }
-} // pcdl
+}
+
+
+
+#endif //POINTCLOUDDOCKLIB_PCDL_VISUALIZATION_H

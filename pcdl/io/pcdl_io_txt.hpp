@@ -2,13 +2,12 @@
 // Created by mfy on 2025/12/2.
 //
 
-#include "pcdl_io_txt.h"
-
-#include <string>
+#ifndef POINTCLOUDDOCKLIB_TXT_IO_H
+#define POINTCLOUDDOCKLIB_TXT_IO_H
+#include <pcl/point_cloud.h>
+#include <pcl/point_types.h>
 #include <spdlog/spdlog.h>
-#include <fstream>
 
-#define DLL_EXPORTS
 namespace pcdl {
     namespace io {
 
@@ -61,7 +60,7 @@ namespace pcdl {
             spdlog::info("点云读取成功！文件：{}，点数：{}", file_path, cloud->size());
             return true;
         }
-
-
     } // io
 } // pcdl
+
+#endif //POINTCLOUDDOCKLIB_TXT_IO_H

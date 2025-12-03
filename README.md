@@ -23,7 +23,7 @@ https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/cont
 - 常量命名：
   - 声明为 constexpr 或 const 的变量, 或在程序运行期间其值始终保持不变的, 命名时以 “k” 开头, 大小写混合. 例如: kMaxSize, kBufferSize.
 - 函数名：
-  - 常规函数使用大小写混合, 取值和设值函数则要求与变量名匹配: MyExcitingFunction(), MyExcitingMethod(), my_exciting_member_variable(), set_my_exciting_member_variable().
+  - 常规函数使用大小写混合，配合驼峰命名，第一个单词首字母小写，后续单字首字母大写, 取值和设值函数则要求与变量名匹配: myExcitingFunction(), myExcitingMethod()
 - 命名空间命名：
   - 命名空间以小写字母命名. 最高级命名空间的名字取决于项目名称. 要注意避免嵌套命名空间的名字之间和常见的顶级命名空间的名字之间发生冲突.
   顶级命名空间的名称应当是项目名或者是该命名空间中的代码所属的团队的名字. 命名空间中的代码, 应当存放于和命名空间的名字匹配的文件夹或其子文件夹中.
