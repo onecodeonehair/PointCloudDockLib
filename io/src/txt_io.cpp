@@ -7,6 +7,8 @@
 #include <string>
 #include <spdlog/spdlog.h>
 #include <fstream>
+
+#define DLL_EXPORTS
 namespace pcdl {
     namespace io {
 

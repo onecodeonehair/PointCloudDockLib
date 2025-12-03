@@ -24,10 +24,6 @@ target_link_libraries(${LIB_NAME} PRIVATE
 
 
 
-
-
-
-
 ## ----- install library ----- ##
 # 设置安装目标路径
 set(INSTALL_DIR "${CMAKE_SOURCE_DIR}/install")

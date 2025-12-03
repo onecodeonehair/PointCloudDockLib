@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 ##---------# find dependencies #---------##
 find_package(PCL REQUIRED)
-find_package(OpenCV REQUIRED)
+find_package(OpenCV CONFIG OPTIONAL_COMPONENTS)
 include_directories(${OpenCV_INCLUDE_DIRS})
 find_package(spdlog CONFIG REQUIRED)
 
